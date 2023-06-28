@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 if (InputIsEmpty(message)) {
                     sendIntent.setData(Uri.parse("whatsapp://send?phone=521" + phoneNumber));
                 } else {
-                    sendIntent.setData(Uri.parse("whatsapp://send?phone=521" + phoneNumber + "&text=" + messageInput.getText().toString().trim()));
+                    sendIntent.setData(Uri.parse("whatsapp://send?phone=521" + phoneNumber + "&text=" + message));
                 }
                 startActivity(sendIntent);
             } else {
